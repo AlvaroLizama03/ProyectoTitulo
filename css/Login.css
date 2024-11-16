@@ -1,0 +1,86 @@
+/* Fondo y cuerpo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff4500, #ff6347); /* Degradado en naranja/rojo */
+    color: #333;
+}
+
+/* Contenedor del formulario */
+#loginContainer {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Título */
+#loginContainer h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ff4500;
+}
+
+/* Campos del formulario */
+#loginContainer input[type="text"],
+#loginContainer input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón de inicio de sesión */
+#loginContainer button {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#loginContainer button:hover {
+    background-color: #e63946;
+    transform: translateY(-2px);
+}
+
+/* Mensaje de error */
+#errorMensaje {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ffe4e1;
+    color: #e63946;
+    border: 1px solid #e63946;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Enlace para registrarse */
+#loginContainer a {
+    color: #ff4500;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#loginContainer a:hover {
+    text-decoration: underline;
+}
